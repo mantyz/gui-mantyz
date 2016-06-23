@@ -4,7 +4,7 @@ MAKE=make
 CLEAN=rm -f
 PROGRAM_NAME=test
 
-$(PROGRAM_NAME): test.cc
+$(PROGRAM_NAME): test.cpp
 	$(CC) $(CCFLAGS) -o $(PROGRAM_NAME) test.cc `pkg-config gtkmm-3.0 --cflags --libs`
 
 clean:
