@@ -10,11 +10,12 @@
     <property name="type_hint">normal</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox1">
+        <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
-        <property name="spacing">2</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
@@ -35,7 +36,8 @@
           </object>
           <packing>
             <property name="expand">False</property>
-            <property name="fill">False</property>
+            <property name="fill">True</property>
+            <property name="pack_type">end</property>
             <property name="position">0</property>
           </packing>
         </child>
@@ -54,5 +56,8 @@
         </child>
       </object>
     </child>
+    <action-widgets>
+      <action-widget response="0">quit_button</action-widget>
+    </action-widgets>
   </object>
 </interface>

@@ -1,6 +1,7 @@
 *.sublime-project
 *.sublime-workspace
 test
+*.*~
 
 # Compiled Object files
 *.slo
