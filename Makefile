@@ -5,7 +5,7 @@ CLEAN=rm -f
 PROGRAM_NAME=test
 
 $(PROGRAM_NAME): test.cpp
-	$(CC) $(CCFLAGS) -o $(PROGRAM_NAME) test.cc `pkg-config gtkmm-3.0 --cflags --libs`
+	$(CC) $(CCFLAGS) -o $(PROGRAM_NAME) test.cpp `pkg-config gtkmm-3.0 --cflags --libs`
 
 clean:
 	$(CLEAN) $(PROGRAM_NAME) *.o
