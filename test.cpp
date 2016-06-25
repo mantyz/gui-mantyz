@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 		refBuilder->get_widget("quit_button", pButton);
 		if (pButton)
 		{
-			pButton->signal_clicked().connect(sigc::ptr_fun(on_button_clicked));
+			pButton->signal_clicked().connect(sigc::ptr_fun(&on_button_clicked));
 		}
 
 		app->run(*pDialog);
